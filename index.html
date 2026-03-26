@@ -1,1 +1,153 @@
-<p> hello shivam parihar</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mediova Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #39ff14;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li {
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .nav-links li:hover {
+      color: #39ff14;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+      height: 80vh;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      line-height: 1.3;
+    }
+
+    .green {
+      color: #39ff14;
+    }
+
+    .hero-img img {
+      width: 350px;
+      border-radius: 10px;
+    }
+
+    /* Floating circles */
+    .circle {
+      position: absolute;
+      background: #39ff14;
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+
+    .circle.small {
+      width: 15px;
+      height: 15px;
+      top: 150px;
+      left: 300px;
+    }
+
+    .circle.big {
+      width: 40px;
+      height: 40px;
+      top: 250px;
+      right: 200px;
+    }
+
+    /* WhatsApp button */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">MEDIOVA</div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Portfolio</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        We Design. We Market. <br>
+        We <span class="green">Grow</span> Your Business at <br>
+        <span class="green">Mediova Techno Labs</span>
+      </h1>
+    </div>
+
+    <div class="hero-img">
+      <img src="https://via.placeholder.com/350" alt="Girl">
+    </div>
+  </section>
+
+  <!-- Floating Elements -->
+  <div class="circle small"></div>
+  <div class="circle big"></div>
+
+  <!-- WhatsApp Button -->
+  <div class="whatsapp">💬</div>
+
+</body>
+</html>
